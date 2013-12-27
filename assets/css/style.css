@@ -1,0 +1,6 @@
+.page{background-color:#111;}
+#wrapperInterior{	padding:25px;}
+#main{background:#eee;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;}
