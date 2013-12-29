@@ -1,227 +1,139 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
 <link href="assets/js/jquery.mobile-1.4.0-rc.1.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
 <script src="assets/js/cordova.js"></script>
 <script src="assets/js/jquery-2.0.3.min.js"></script>
 <script src="assets/js/jquery.mobile-1.4.0-rc.1.min.js"></script>
 <script src="assets/js/init.js"></script>
-<script src="assets/js/crear_dieta.js"></script>
-<script>
-
-</script>
-<style>
-
-</style>
 </head>
-
 <body>
-<!--NUEVA PAGINA-->
+<!--NUEVA PAGINA--> 
 <!--Pagina home-->
 <section data-role="page" class="page" id="home" >
-<div data-theme="b" data-role="header">
-        <h3>Dietario</h3>
-</div>
-<div id="wrapperInterior">
-<p style="text-align:center; padding:20px;"><img src="assets/img/logo.fw.png"/></p>
-<div id="main">
-    
-    <div data-role="content">
-        <h3>
-            Mis dietas
-        </h3>
-       <div data-role="fieldcontain" style='padding:20px 20px 40px 20px;'>
-       	<ul data-role="listview">
-        	<li><a class="vDietas" href="#dietas">Dietas</a></li>
+  <div data-theme="b" data-role="header">
+    <h3>Dietario</h3>
+  </div>
+  <div id="wrapperInterior">
+    <p style="text-align:center; padding:20px;"><img src="assets/img/logo.fw.png"/></p>
+    <div id="main">
+      <div data-role="content">
+        <h3> Mis dietas </h3>
+        <div data-role="fieldcontain" style='padding:20px 20px 40px 20px;'>
+          <ul data-role="listview">
+            <li><a class="vDietas" href="#dietas">Dietas</a></li>
             <li><a class="vCrear" href="#crear_dieta">Crear dieta</a></li>
-        </ul>
-        <div class="log"></div>
-		
+          </ul>
+          <div class="log"></div>
         </div>
-       
-</div> 
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-<!--NUEVA PAGINA-->
+<!--NUEVA PAGINA--> 
 <!--Pagina dietas-->
 <section data-role="page" class="page" id="crear_dieta" >
-<div data-theme="b" data-role="header">
-        <h3>Dietario</h3>
-</div>
-<div id="wrapperInterior">
-<p style="text-align:center; padding:20px;"><img src="assets/img/logo.fw.png"/></p>
-<div id="main">
-
-    
-    <div data-role="content">
-        <h3>
-            Info
-        </h3>
-       
+  <div data-theme="b" data-role="header">
+    <h3>Dietario</h3>
+  </div>
+  <div id="wrapperInterior">
+    <p style="text-align:center; padding:20px;"><img src="assets/img/logo.fw.png"/></p>
+    <div id="main">
+      <div data-role="content">
+        <h3> Info </h3>
         <div data-role="fieldcontain">
-        
-            <label for="nombre">
-                Título dieta
-            </label>
-            <input name="" id="nombre" placeholder=""  type="text">
+          <label for="nombre"> Título dieta </label>
+          <input  id="nombre" placeholder=""  type="text">
         </div>
         <div data-role="fieldcontain">
-            <label for="peso">
-                Peso corporal(kg)
-            </label>
-            <input id="peso" type="range" name="slider" value="50" min="0" max="200"
+          <label for="peso"> Peso corporal(kg) </label>
+          <input id="peso" type="range" name="slider" value="50" min="0" max="200"
             data-highlight="true" data-theme="h" data-track-theme="b">
         </div>
         <div data-role="fieldcontain">
-            <label for="selectmenu1">
-                Objetivo
-            </label>
-            <select id="objetivo" name="">
-                <option value="">
-                    Perder peso
-                </option>
-                <option value="">
-                    Mantener peso
-                </option>
-                <option value="">
-                    Ganar masa muscular
-                </option>
-            </select>
+          <label for="selectmenu1"> Objetivo </label>
+          <select id="objetivo" >
+            <option> Perder peso </option>
+            <option> Mantener peso </option>
+            <option> Ganar masa muscular </option>
+          </select>
         </div>
         <div data-role="fieldcontain">
-            <label for="autor">
-                Autor
-            </label>
-            <input name="" id="autor" placeholder=""  type="text">
+          <label for="autor"> Autor </label>
+          <input  id="autor" placeholder=""  type="text">
         </div>
         <div data-role="fieldcontain">
-            <label for="valoracion">
-                Valoración
-            </label>
-            <input id="valoracion" type="range" name="slider" value="0" min="0" max="5"
+          <label for="valoracion"> Valoración </label>
+          <input id="valoracion" type="range" name="slider" value="0" min="0" max="5"
             data-highlight="true" data-theme="h" data-track-theme="b">
         </div>
-        <h3>
-            Comidas
-        </h3>
-    
-        
-<div id='comidas'>
-    <div class="item">        
-        <div data-role="fieldcontain" class="td">
-            <label for="textinput6">
-                Hora
-            </label>
-           <input type="time" class="t" />
-        
-        
+        <h3> Comidas </h3>
+        <div id='comidas'>
+          <div class="item">
+            <div data-role="fieldcontain" class="td">
+              <label for="textinput6"> Hora </label>
+              <input type="time" class="t" />
+            </div>
+            <div data-role="fieldcontain" class="comidad">
+              <label for="textinput5"> Comida </label>
+              <input type="text" class="comida" />
+            </div>
+          </div>
         </div>
-        <div data-role="fieldcontain" class="comidad">
-            <label for="textinput5">
-                Comida
-            </label>
-            <input type="text" class="comida" />
-        </div>
-
-    </div>
-</div>
-		<div data-role="fieldcontain" class="PLUS">
-		<a data-role="button" data-inline='true' data-icon="plus" data-iconpos="left"
-        id="addComidaF">
-            Añadir comida
-        </a>
-        </div>
-        <div class="SAVE">
-        <a id="guardar" data-role="button" class="vDietas" href="#dietas" data-theme="c" data-icon="plus" data-iconpos="left">
-            Guardar dieta
-        </a>
-        </div>
-        <div id='hide' style="display:none">
-        <a data-role="button" data-inline='true'  data-icon="minus" data-iconpos="left"
-        class="delComida">
-            Quitar comida
-        </a>
-        </div>
+        <div data-role="fieldcontain" class="PLUS"> <a data-role="button" data-inline='true' data-icon="plus" data-iconpos="left"
+        id="addComidaF"> Añadir comida </a> </div>
+        <div class="SAVE"> <a id="guardar" data-role="button" class="vDietas" href="#dietas" data-theme="c" data-icon="plus" data-iconpos="left"> Guardar dieta </a> </div>
+        <div id='hide' style="display:none"> <a data-role="button" data-inline='true'  data-icon="minus" data-iconpos="left"
+        class="delComida"> Quitar comida </a> </div>
         <div class="log"></div>
+      </div>
+      <div data-theme="b" data-role="footer" data-position="fixed">
+        <h3> phpymas.com </h3>
+      </div>
     </div>
-    <div data-theme="b" data-role="footer" data-position="fixed">
-        <h3>
-            phpymas.com
-        </h3>
-    </div>
-</div>
-</div>
+  </div>
 </section>
 
-<!--NUEVA PAGINA-->
+<!--NUEVA PAGINA--> 
 <!--Pagina dietas-->
 <section data-role="page" class="page" id="dietas" >
-<div data-theme="b" data-role="header">
-        <h3>Dietario</h3>
-</div>
-<div id="wrapperInterior">
-<p style="text-align:center; padding:20px;"><img src="assets/img/logo.fw.png"/></p>
-<div id="main">
-    
-    <div data-role="content">
-        <h3>
-            Mis dietas
-        </h3>
-       
-       
-        <div id="lDietas">
-        </div>
+  <div data-theme="b" data-role="header">
+    <h3>Dietario</h3>
+  </div>
+  <div id="wrapperInterior">
+    <p style="text-align:center; padding:20px;"><img src="assets/img/logo.fw.png"/></p>
+    <div id="main">
+      <div data-role="content">
+        <h3> Mis dietas </h3>
+        <div id="lDietas"> </div>
         <div id="dieta"></div>
         <div class="log"></div>
-        
-       
-        
         <div data-theme="b" data-role="footer" data-position="fixed">
-          <h3>
-            phpymas.com
-          </h3>
+          <h3> phpymas.com </h3>
+        </div>
+      </div>
+    </div>
   </div>
-</div> 
-</div>
-</div>
 </section>
 
-
-<!--NUEVA PAGINA-->
+<!--NUEVA PAGINA--> 
 <!--Dialogo confirmacion-->
 <section data-role="page" class="page" id="comfirmacionDel" >
-<div data-theme="b" data-role="header">
-        <h3>Dietario</h3>
-</div>
-<div id="wrapperInterior">
-<div id="main">
-    
-    <div data-role="content">
-        <h3>
-            Mis dietas
-        </h3>
-       
-       
-        <div data-role="fieldcontain">
-		<a data-role="button" href="#home"  id="delOk" >Si</a>
-       	<a data-role="button" class="vDietas" href="#dietas" id="delKo" >No</a>
-        </div>
-       
-</div> 
-</div>
-</div>
+  <div data-theme="b" data-role="header">
+    <h3>Dietario</h3>
+  </div>
+  <div id="wrapperInterior">
+    <div id="main">
+      <div data-role="content">
+        <h3> Mis dietas </h3>
+        <div data-role="fieldcontain"> <a data-role="button" href="#home"  id="delOk" >Si</a> <a data-role="button" class="vDietas" href="#dietas" id="delKo" >No</a> </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
 </body>
 </html>

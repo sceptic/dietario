@@ -81,15 +81,6 @@ function alertDismissed() {
 function onInit() {
 	
 	crearDieta();
-	setTimeout(function(){
-		navigator.notification.beep();
-		navigator.notification.alert(
-    'Eres el ganador!',     // mensaje (message)
-    alertDismissed,         // función 'callback' (alertCallback)
-    'Game Over',            // titulo (title)
-    'Cerrar'                // nombre del botón (buttonName)
-    );
-		},30000);
 	
 
     //Guardar
